@@ -9,7 +9,7 @@
 #import "WXArenaTableController.h"
 
 @interface WXArenaTableController ()
-
+  
 @end
 
 @implementation WXArenaTableController
