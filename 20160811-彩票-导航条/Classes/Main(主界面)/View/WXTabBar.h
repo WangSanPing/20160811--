@@ -8,9 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class WXTabBar;
+
+@protocol WXTabBarDelegate <NSObject>
+
+@optional
+
+- (void)tabBar:(WXTabBar *)tabBar didClickBtn:(NSInteger)index;
+
+@end
+
 @interface WXTabBar : UIView
 
 /** UITabBarItem */
 @property (nonatomic,strong) NSArray *items;
+
+/** delegate */
+@property (nonatomic,weak) id<WXTabBarDelegate> delegate;
 
 @end

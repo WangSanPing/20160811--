@@ -7,6 +7,14 @@
 //
 
 #import "WXTabBar.h"
+#import "WXTabBarButton.h"
+
+@interface WXTabBar()
+
+/** 用于保存上次点击的button */
+@property (nonatomic,weak) WXTabBarButton *selBtn;
+
+@end
 
 @implementation WXTabBar
 
@@ -15,10 +23,32 @@
     
     for (UITabBarItem *item in items) {
         
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        WXTabBarButton *btn = [WXTabBarButton buttonWithType:UIButtonTypeCustom];
+        
+        btn.tag = self.subviews.count;
+        
         [btn setBackgroundImage:item.image forState:UIControlStateNormal];
         [btn setBackgroundImage:item.selectedImage forState:UIControlStateSelected];
+        
+        [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchDown];
+        
         [self addSubview:btn];
+        
+        if (self.subviews.count == 1){
+            [self btnClick:btn];
+        }
+    }
+}
+
+- (void)btnClick:(WXTabBarButton *)btn{
+    _selBtn.selected = NO;
+    
+    btn.selected = YES;
+    
+    _selBtn = btn;
+    
+    if([_delegate respondsToSelector:@selector(tabBar:didClickBtn:)]){
+        [_delegate tabBar:self didClickBtn:btn.tag];
     }
 }
 
