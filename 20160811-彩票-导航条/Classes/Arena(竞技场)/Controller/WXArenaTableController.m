@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%s",__func__);
-   
+   self.navigationItem.title = @"竞技场";
 }
 
 - (void)didReceiveMemoryWarning {
