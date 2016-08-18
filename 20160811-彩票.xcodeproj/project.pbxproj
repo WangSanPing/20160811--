@@ -19,6 +19,8 @@
 		592051001D619B09009E907D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F71D619B09009E907D /* AppDelegate.m */; };
 		592051011D619B09009E907D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F81D619B09009E907D /* main.m */; };
 		592051031D619BA3009E907D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592051021D619BA3009E907D /* LaunchScreen.xib */; };
+		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
+		597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29C21D65A62F006234ED /* WXTabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		592050F71D619B09009E907D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		592050F81D619B09009E907D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		592051021D619BA3009E907D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		597C29BE1D659E20006234ED /* WXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigationController.h; sourceTree = "<group>"; };
+		597C29BF1D659E20006234ED /* WXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNavigationController.m; sourceTree = "<group>"; };
+		597C29C11D65A62F006234ED /* WXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBarButton.h; sourceTree = "<group>"; };
+		597C29C21D65A62F006234ED /* WXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +291,8 @@
 			children = (
 				592050E91D619B09009E907D /* WXTabBarController.h */,
 				592050EA1D619B09009E907D /* WXTabBarController.m */,
+				597C29BE1D659E20006234ED /* WXNavigationController.h */,
+				597C29BF1D659E20006234ED /* WXNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +309,8 @@
 			children = (
 				592050ED1D619B09009E907D /* WXTabBar.h */,
 				592050EE1D619B09009E907D /* WXTabBar.m */,
+				597C29C11D65A62F006234ED /* WXTabBarButton.h */,
+				597C29C21D65A62F006234ED /* WXTabBarButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,11 +459,13 @@
 			files = (
 				592051011D619B09009E907D /* main.m in Sources */,
 				592050FD1D619B09009E907D /* WXTabBarController.m in Sources */,
+				597C29C01D659E20006234ED /* WXNavigationController.m in Sources */,
 				592050FE1D619B09009E907D /* WXTabBar.m in Sources */,
 				592051001D619B09009E907D /* AppDelegate.m in Sources */,
 				592050FC1D619B09009E907D /* WXHistoryTableController.m in Sources */,
 				592050F91D619B09009E907D /* WXArenaTableController.m in Sources */,
 				592050FF1D619B09009E907D /* WXMyLotteryViewController.m in Sources */,
+				597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */,
 				592050FB1D619B09009E907D /* WXHallTableController.m in Sources */,
 				592050FA1D619B09009E907D /* WXDiscoverTableController.m in Sources */,
 			);
