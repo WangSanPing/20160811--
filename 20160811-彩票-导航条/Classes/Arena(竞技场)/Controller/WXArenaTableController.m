@@ -9,7 +9,7 @@
 #import "WXArenaTableController.h"
 
 @interface WXArenaTableController ()
-
+  
 @end
 
 @implementation WXArenaTableController
@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     NSLog(@"%s",__func__);
-
+   
 }
 
 - (void)didReceiveMemoryWarning {

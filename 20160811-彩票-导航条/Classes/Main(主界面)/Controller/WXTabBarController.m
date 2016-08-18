@@ -8,16 +8,17 @@
 
 #import "WXTabBarController.h"
 
-#import "WXTabBar.h"
 #import "WXHallTableController.h"
 #import "WXArenaTableController.h"
 #import "WXHistoryTableController.h"
 #import "WXDiscoverTableController.h"
 #import "WXMyLotteryViewController.h"
 
+#import "WXTabBar.h"
+#import "WXTabBarController.h"
+#import "WXNavigationController.h"
 
-
-@interface WXTabBarController ()
+@interface WXTabBarController ()<WXTabBarDelegate>
 
 /** 保存所有控制器对应的按钮的内容 */
 @property (nonatomic,strong) NSMutableArray *items;
@@ -54,6 +55,7 @@
     tabBar.items = self.items;
     tabBar.backgroundColor = [UIColor orangeColor];
     tabBar.frame = self.tabBar.frame;
+    tabBar.delegate = self;
     [self.view addSubview:tabBar];
 }
 
@@ -90,6 +92,11 @@
     [self setUpOneChildViewController:myLottery image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"]];
 }
 
+#pragma mark - tabBar Delegate
+- (void)tabBar:(WXTabBar *)tabBar didClickBtn:(NSInteger)index{
+    self.selectedIndex = index;
+}
+
 #pragma mark - 添加一个子控制器
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage{
     
@@ -98,7 +105,14 @@
     
     [self.items addObject:vc.tabBarItem];
     vc.view.backgroundColor = [self randomColor];
-    [self addChildViewController:vc];
+    
+    WXNavigationController *bar = [[WXNavigationController alloc] initWithRootViewController:vc];
+    
+    // 如果要设置背景图片，必须填UIBarMetricsDefault,默认导航控制器的子控制器的view尺寸会变化。
+    // 设置导航条背景图片，一定要在导航条显示之前设置
+    //    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    
+    [self addChildViewController:bar];
 }
 
 - (UIColor *)randomColor
