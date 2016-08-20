@@ -1,0 +1,18 @@
+//
+//  彩票.pch
+//  20160811-彩票
+//
+//  Created by 王旭 on 16/8/20.
+//  Copyright © 2016年 wangxu. All rights reserved.
+//
+
+#ifndef ___pch
+#define ___pch
+
+#ifdef __OBJC__
+
+#import "UIView+Image.h"
+#import "UIView+Frame.h"
+
+#endif
+#endif /* ___pch */

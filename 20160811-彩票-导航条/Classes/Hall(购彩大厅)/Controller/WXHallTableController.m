@@ -17,8 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"购彩大厅";
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"CS50_activity_image"] style:UIBarButtonItemStylePlain target:self action:@selector(active)];
+}
+
+- (void)active
+{
+    NSLog(@"点击活动");
 }
 
 - (void)didReceiveMemoryWarning {

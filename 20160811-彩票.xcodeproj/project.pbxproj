@@ -19,6 +19,8 @@
 		592051001D619B09009E907D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F71D619B09009E907D /* AppDelegate.m */; };
 		592051011D619B09009E907D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F81D619B09009E907D /* main.m */; };
 		592051031D619BA3009E907D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592051021D619BA3009E907D /* LaunchScreen.xib */; };
+		595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B61D6877C80039ABF4 /* UIView+Frame.m */; };
+		595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B91D6877D20039ABF4 /* UIView+Image.m */; };
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
 		597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29C21D65A62F006234ED /* WXTabBarButton.m */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,11 @@
 		592050F71D619B09009E907D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		592050F81D619B09009E907D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		592051021D619BA3009E907D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		595240B51D6877C80039ABF4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		595240B61D6877C80039ABF4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		595240B81D6877D20039ABF4 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		595240B91D6877D20039ABF4 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		595240BC1D687BE00039ABF4 /* 彩票.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "彩票.pch"; sourceTree = "<group>"; };
 		597C29BE1D659E20006234ED /* WXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNavigationController.h; sourceTree = "<group>"; };
 		597C29BF1D659E20006234ED /* WXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNavigationController.m; sourceTree = "<group>"; };
 		597C29C11D65A62F006234ED /* WXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBarButton.h; sourceTree = "<group>"; };
@@ -351,11 +358,24 @@
 		592050F51D619B09009E907D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				595240B41D6877B70039ABF4 /* Categoty */,
 				592050F61D619B09009E907D /* AppDelegate.h */,
 				592050F71D619B09009E907D /* AppDelegate.m */,
+				595240BC1D687BE00039ABF4 /* 彩票.pch */,
 				592050F81D619B09009E907D /* main.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		595240B41D6877B70039ABF4 /* Categoty */ = {
+			isa = PBXGroup;
+			children = (
+				595240B51D6877C80039ABF4 /* UIView+Frame.h */,
+				595240B61D6877C80039ABF4 /* UIView+Frame.m */,
+				595240B81D6877D20039ABF4 /* UIView+Image.h */,
+				595240B91D6877D20039ABF4 /* UIView+Image.m */,
+			);
+			path = Categoty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */,
 				592051011D619B09009E907D /* main.m in Sources */,
 				592050FD1D619B09009E907D /* WXTabBarController.m in Sources */,
 				597C29C01D659E20006234ED /* WXNavigationController.m in Sources */,
@@ -465,6 +486,7 @@
 				592050FC1D619B09009E907D /* WXHistoryTableController.m in Sources */,
 				592050F91D619B09009E907D /* WXArenaTableController.m in Sources */,
 				592050FF1D619B09009E907D /* WXMyLotteryViewController.m in Sources */,
+				595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */,
 				597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */,
 				592050FB1D619B09009E907D /* WXHallTableController.m in Sources */,
 				592050FA1D619B09009E907D /* WXDiscoverTableController.m in Sources */,
@@ -576,6 +598,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "20160811-彩票-导航条/Classes/Other/彩票.pch";
 				INFOPLIST_FILE = "20160811-彩票-导航条/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -588,6 +612,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "20160811-彩票-导航条/Classes/Other/彩票.pch";
 				INFOPLIST_FILE = "20160811-彩票-导航条/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
