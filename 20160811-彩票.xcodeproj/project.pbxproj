@@ -23,6 +23,9 @@
 		595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B91D6877D20039ABF4 /* UIView+Image.m */; };
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
 		597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29C21D65A62F006234ED /* WXTabBarButton.m */; };
+		59F2B0211D69C08F00408C37 /* WXCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2B0201D69C08F00408C37 /* WXCover.m */; };
+		59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2B0231D69C0E000408C37 /* WXActiveMenu.m */; };
+		59F2B0261D69C0F900408C37 /* WXActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F2B0251D69C0F900408C37 /* WXActiveMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,11 @@
 		597C29BF1D659E20006234ED /* WXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNavigationController.m; sourceTree = "<group>"; };
 		597C29C11D65A62F006234ED /* WXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBarButton.h; sourceTree = "<group>"; };
 		597C29C21D65A62F006234ED /* WXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBarButton.m; sourceTree = "<group>"; };
+		59F2B01F1D69C08F00408C37 /* WXCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCover.h; sourceTree = "<group>"; };
+		59F2B0201D69C08F00408C37 /* WXCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCover.m; sourceTree = "<group>"; };
+		59F2B0221D69C0E000408C37 /* WXActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXActiveMenu.h; sourceTree = "<group>"; };
+		59F2B0231D69C0E000408C37 /* WXActiveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXActiveMenu.m; sourceTree = "<group>"; };
+		59F2B0251D69C0F900408C37 /* WXActiveMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXActiveMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +254,11 @@
 		592050E01D619B09009E907D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				59F2B01F1D69C08F00408C37 /* WXCover.h */,
+				59F2B0201D69C08F00408C37 /* WXCover.m */,
+				59F2B0221D69C0E000408C37 /* WXActiveMenu.h */,
+				59F2B0231D69C0E000408C37 /* WXActiveMenu.m */,
+				59F2B0251D69C0F900408C37 /* WXActiveMenu.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,6 +435,7 @@
 		5920509E1D619A0A009E907D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WX;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = wangxu;
 				TargetAttributes = {
@@ -458,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F2B0261D69C0F900408C37 /* WXActiveMenu.xib in Resources */,
 				592050B61D619A0B009E907D /* Assets.xcassets in Resources */,
 				592051031D619BA3009E907D /* LaunchScreen.xib in Resources */,
 			);
@@ -477,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */,
 				595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */,
 				592051011D619B09009E907D /* main.m in Sources */,
 				592050FD1D619B09009E907D /* WXTabBarController.m in Sources */,
@@ -489,6 +505,7 @@
 				595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */,
 				597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */,
 				592050FB1D619B09009E907D /* WXHallTableController.m in Sources */,
+				59F2B0211D69C08F00408C37 /* WXCover.m in Sources */,
 				592050FA1D619B09009E907D /* WXDiscoverTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

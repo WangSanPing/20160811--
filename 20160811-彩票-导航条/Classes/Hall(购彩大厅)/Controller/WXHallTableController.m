@@ -7,8 +7,11 @@
 //
 
 #import "WXHallTableController.h"
+#import "WXCover.h"
+#import "WXActiveMenu.h"
 
-@interface WXHallTableController ()
+
+@interface WXHallTableController ()<WXActiveMenuDelegate>
 
 @end
 
@@ -23,12 +26,28 @@
 - (void)active
 {
     NSLog(@"点击活动");
+    
+    // 弹出蒙版
+    [WXCover show];
+    
+    WXActiveMenu *menu = [WXActiveMenu showInPoint:self.view.center];
+    menu.delegate = self;
+    
 }
+
+#pragma mark -activeMenu的代理方法
+- (void)activeMenuDidClickBtn:(WXActiveMenu *)menu{
+    [WXActiveMenu hideInPoint:CGPointMake(44, 44) completion:^{
+        [WXCover hide];
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Table view data source
 

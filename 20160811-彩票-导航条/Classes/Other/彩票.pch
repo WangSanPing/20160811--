@@ -14,5 +14,8 @@
 #import "UIView+Image.h"
 #import "UIView+Frame.h"
 
+#define WXKeyWindow [UIApplication sharedApplication].keyWindow
+#define WXScreenBounds [UIScreen mainScreen].bounds
+
 #endif
 #endif /* ___pch */
