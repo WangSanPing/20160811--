@@ -16,6 +16,8 @@
 
 #define WXKeyWindow [UIApplication sharedApplication].keyWindow
 #define WXScreenBounds [UIScreen mainScreen].bounds
+#define WXScreenW WXScreenBounds.size.width
+#define WXScreenH WXScreenBounds.size.height
 
 #endif
 #endif /* ___pch */

@@ -7,25 +7,67 @@
 //
 
 #import "WXHallTableController.h"
+
 #import "WXCover.h"
 #import "WXActiveMenu.h"
+#import "WXDownMenu.h"
+#import "WXMenuItem.h"
 
 
 @interface WXHallTableController ()<WXActiveMenuDelegate>
+
+/** downMenu */
+@property (nonatomic,weak) WXDownMenu *downMenu;
+
+/** isPopMenu */
+@property (nonatomic,assign) BOOL isPopMenu;
 
 @end
 
 @implementation WXHallTableController
 
+-(WXDownMenu *)downMenu{
+    if(_downMenu == nil){
+        WXMenuItem *item = [WXMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        WXMenuItem *item1 = [WXMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        WXMenuItem *item2 = [WXMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        WXMenuItem *item3 = [WXMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        WXMenuItem *item4 = [WXMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        WXMenuItem *item5 = [WXMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        
+        NSArray *items = @[item,item1,item2,item3,item4,item5];
+        
+        _downMenu = [WXDownMenu showInView:self.view items:items oriY:0];
+    }
+    
+    return _downMenu;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 左边按钮
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"CS50_activity_image"] style:UIBarButtonItemStylePlain target:self action:@selector(active)];
+    
+    // 右边按钮
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriRenderingImage:@"Development"]  style:UIBarButtonItemStylePlain target:self action:@selector(popMenu)];
 }
 
+#pragma mark - 点击菜单按钮的时候调用
+- (void)popMenu{
+    if(_isPopMenu == NO){
+        [self downMenu];
+    }else{
+        [self.downMenu hide];
+    }
+    
+    _isPopMenu = !_isPopMenu;
+}
+
+#pragma mark - 点击活动
 - (void)active
 {
-    NSLog(@"点击活动");
+//    NSLog(@"点击活动");
     
     // 弹出蒙版
     [WXCover show];

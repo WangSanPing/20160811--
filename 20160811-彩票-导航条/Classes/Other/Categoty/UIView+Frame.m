@@ -20,6 +20,10 @@
     self.frame = rect;
 }
 
+- (CGFloat)width{
+    return self.frame.size.width;
+}
+
 - (void)setWidth:(CGFloat)width
 {
     CGRect rect = self.frame;

@@ -107,7 +107,7 @@
     vc.tabBarItem.selectedImage = selImage;
     
     [self.items addObject:vc.tabBarItem];
-    vc.view.backgroundColor = [self randomColor];
+//    vc.view.backgroundColor = [self randomColor];
     
     WXNavigationController *bar = [[WXNavigationController alloc] initWithRootViewController:vc];
     

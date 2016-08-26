@@ -7,6 +7,7 @@
 //
 
 #import "WXActiveMenu.h"
+#import "WXDownMenu.h"
 
 @implementation WXActiveMenu
 
@@ -21,7 +22,6 @@
 #pragma mark - 隐藏菜单
 + (void)hideInPoint:(CGPoint)point completion:(void (^)())completion
 {
-    
     for (WXActiveMenu *childView in WXKeyWindow.subviews) {
         if([childView isKindOfClass:self]){
             [childView setUpHideAnim:point completion:completion];
