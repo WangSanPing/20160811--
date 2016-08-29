@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%s",__func__);
+//    self.navigationItem.title = @"发现";
 
 }
 

@@ -17,6 +17,8 @@
 #import "WXTabBar.h"
 #import "WXTabBarController.h"
 #import "WXNavigationController.h"
+#import "WXArenaNavController.h"
+
 
 @interface WXTabBarController ()<WXTabBarDelegate>
 
@@ -72,24 +74,24 @@
     // 购彩大厅
     WXHallTableController *hall = [[WXHallTableController alloc] init];
     
-    [self setUpOneChildViewController:hall image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"]];
+    [self setUpOneChildViewController:hall image:[UIImage imageNamed:@"TabBar_LotteryHall_new"] selImage:[UIImage imageNamed:@"TabBar_LotteryHall_selected_new"] title:@"购彩大厅"];
     
     // 竞技场
     WXArenaTableController *arena = [[WXArenaTableController alloc] init];
     
-    [self setUpOneChildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"]];
+    [self setUpOneChildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:@"竞技场"];
     
     // 发现
     WXDiscoverTableController *discover = [[WXDiscoverTableController alloc] init];
-    [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"]];
+    [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
     
     // 开奖信息
     WXHistoryTableController *history = [[WXHistoryTableController alloc] init];
-    [self setUpOneChildViewController:history image:[UIImage imageNamed:@"TabBar_History_new"] selImage:[UIImage imageNamed:@"TabBar_History_selected_new"]];
+    [self setUpOneChildViewController:history image:[UIImage imageNamed:@"TabBar_History_new"] selImage:[UIImage imageNamed:@"TabBar_History_selected_new"] title:@"开奖信息"];
     
     // 我的彩票
     WXMyLotteryViewController *myLottery = [[WXMyLotteryViewController alloc] init];
-    [self setUpOneChildViewController:myLottery image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"]];
+    [self setUpOneChildViewController:myLottery image:[UIImage imageNamed:@"TabBar_MyLottery_new"] selImage:[UIImage imageNamed:@"TabBar_MyLottery_selected_new"] title:@"我的彩票"];
 }
 
 #pragma mark - tabBar Delegate
@@ -98,15 +100,23 @@
 }
 
 #pragma mark - 添加一个子控制器
-- (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage{
+- (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selImage:(UIImage *)selImage title:(NSString *)title{
+    
+    
+    vc.navigationItem.title = title;
     
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selImage;
     
     [self.items addObject:vc.tabBarItem];
-    vc.view.backgroundColor = [self randomColor];
+//    vc.view.backgroundColor = [self randomColor];
     
-    WXNavigationController *bar = [[WXNavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *bar = [[WXNavigationController alloc] initWithRootViewController:vc];
+    
+    // 如果是竞技场界面 使用自定义navigationController
+    if([vc isKindOfClass:[WXArenaTableController class]]){
+        bar = [[WXArenaNavController alloc] initWithRootViewController:vc];
+    }
     
     // 如果要设置背景图片，必须填UIBarMetricsDefault,默认导航控制器的子控制器的view尺寸会变化。
     // 设置导航条背景图片，一定要在导航条显示之前设置
@@ -124,15 +134,5 @@
     
     return [UIColor colorWithRed:r green:g blue:b alpha:1];
 }
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
