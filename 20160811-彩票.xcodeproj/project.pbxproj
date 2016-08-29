@@ -21,6 +21,7 @@
 		592051031D619BA3009E907D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592051021D619BA3009E907D /* LaunchScreen.xib */; };
 		5939E8C81D6ED5F50049A638 /* WXDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E8C71D6ED5F50049A638 /* WXDownMenu.m */; };
 		5939E8CB1D6ED7280049A638 /* WXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E8CA1D6ED7280049A638 /* WXMenuItem.m */; };
+		593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593CAE071D741D4E00712D32 /* WXArenaNavController.m */; };
 		595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B61D6877C80039ABF4 /* UIView+Frame.m */; };
 		595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B91D6877D20039ABF4 /* UIView+Image.m */; };
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
@@ -69,6 +70,8 @@
 		5939E8C71D6ED5F50049A638 /* WXDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDownMenu.m; sourceTree = "<group>"; };
 		5939E8C91D6ED7280049A638 /* WXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXMenuItem.h; sourceTree = "<group>"; };
 		5939E8CA1D6ED7280049A638 /* WXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXMenuItem.m; sourceTree = "<group>"; };
+		593CAE061D741D4E00712D32 /* WXArenaNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXArenaNavController.h; sourceTree = "<group>"; };
+		593CAE071D741D4E00712D32 /* WXArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArenaNavController.m; sourceTree = "<group>"; };
 		595240B51D6877C80039ABF4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		595240B61D6877C80039ABF4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		595240B81D6877D20039ABF4 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 			children = (
 				592050D11D619B09009E907D /* WXArenaTableController.h */,
 				592050D21D619B09009E907D /* WXArenaTableController.m */,
+				593CAE061D741D4E00712D32 /* WXArenaNavController.h */,
+				593CAE071D741D4E00712D32 /* WXArenaNavController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */,
 				59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */,
 				595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */,
 				592051011D619B09009E907D /* main.m in Sources */,

@@ -20,5 +20,26 @@
  */
 + (instancetype)imageWithOriRenderingImage:(NSString *)imageName;
 
+/**
+ *  快速拉伸图片
+ *
+ *  @param imageName imageName
+ *
+ *  @return image
+ */
++ (instancetype)imageWithStretChableImageName:(NSString *)imageName;
+
+
+/**
+ *  快速拉伸图片
+ *
+ *  @param imageName imageName
+ *  @param width     width
+ *  @param height    heigth
+ *
+ *  @return image
+ */
++ (instancetype)imageWithStretChableImageName:(NSString *)imageName width:(CGFloat)width height:(CGFloat)height;
+
 
 @end
