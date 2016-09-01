@@ -51,14 +51,26 @@
 - (void)setUpTabBar{
     // 移除系统的tabBar，相当于把tabBar上所有的按钮移除
     // 把一个控件移除父控件并不会马上销毁，什么时候销毁，一般在下一次运行循环的时候，就会判断这个对象有没有强引用，如果没有，才会销毁。
-    [self.tabBar removeFromSuperview];
+//    [self.tabBar removeFromSuperview];
     
     WXTabBar *tabBar = [[WXTabBar alloc] init];
     tabBar.items = self.items;
     tabBar.backgroundColor = [UIColor orangeColor];
-    tabBar.frame = self.tabBar.frame;
+    tabBar.frame = self.tabBar.bounds;
     tabBar.delegate = self;
-    [self.view addSubview:tabBar];
+    [self.tabBar addSubview:tabBar];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    // 移除系统自带的按钮
+    for (UIView *childView in self.tabBar.subviews) {
+        if(![childView isKindOfClass:[WXTabBar class]]){
+            [childView removeFromSuperview];
+        }
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,7 +94,8 @@
     [self setUpOneChildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:@"竞技场"];
     
     // 发现
-    WXDiscoverTableController *discover = [[WXDiscoverTableController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"WXDiscoverTableController" bundle:nil];
+    WXDiscoverTableController *discover = [storyboard instantiateInitialViewController];
     [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
     
     // 开奖信息
@@ -109,7 +122,7 @@
     vc.tabBarItem.selectedImage = selImage;
     
     [self.items addObject:vc.tabBarItem];
-//    vc.view.backgroundColor = [self randomColor];
+    //    vc.view.backgroundColor = [self randomColor];
     
     UINavigationController *bar = [[WXNavigationController alloc] initWithRootViewController:vc];
     
