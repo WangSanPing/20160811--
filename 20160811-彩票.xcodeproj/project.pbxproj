@@ -19,6 +19,9 @@
 		592051001D619B09009E907D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F71D619B09009E907D /* AppDelegate.m */; };
 		592051011D619B09009E907D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F81D619B09009E907D /* main.m */; };
 		592051031D619BA3009E907D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592051021D619BA3009E907D /* LaunchScreen.xib */; };
+		592437A61D8141CF00EA814A /* WXSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 592437A51D8141CF00EA814A /* WXSaveTool.m */; };
+		592437A91D8141E000EA814A /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 592437A81D8141E000EA814A /* WXGuideTool.m */; };
+		592437B01D81467A00EA814A /* WXNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592437AF1D81467A00EA814A /* WXNewFeatureViewController.m */; };
 		5925A7531D76B72A00D0CBBD /* WXDiscoverTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5925A7521D76B72A00D0CBBD /* WXDiscoverTableController.storyboard */; };
 		5925A7561D76C97C00D0CBBD /* WXGroupBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5925A7551D76C97C00D0CBBD /* WXGroupBuyViewController.m */; };
 		5925A7591D76C9D700D0CBBD /* WXTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5925A7581D76C9D700D0CBBD /* WXTitleView.m */; };
@@ -31,6 +34,7 @@
 		595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B91D6877D20039ABF4 /* UIView+Image.m */; };
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
 		597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29C21D65A62F006234ED /* WXTabBarButton.m */; };
+		5980CFE11D827EA5004DB73C /* WXNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980CFE01D827EA5004DB73C /* WXNewFeatureCell.m */; };
 		59F2B0211D69C08F00408C37 /* WXCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2B0201D69C08F00408C37 /* WXCover.m */; };
 		59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2B0231D69C0E000408C37 /* WXActiveMenu.m */; };
 		59F2B0261D69C0F900408C37 /* WXActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F2B0251D69C0F900408C37 /* WXActiveMenu.xib */; };
@@ -71,6 +75,12 @@
 		592050F71D619B09009E907D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		592050F81D619B09009E907D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		592051021D619BA3009E907D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		592437A41D8141CF00EA814A /* WXSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSaveTool.h; sourceTree = "<group>"; };
+		592437A51D8141CF00EA814A /* WXSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSaveTool.m; sourceTree = "<group>"; };
+		592437A71D8141E000EA814A /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
+		592437A81D8141E000EA814A /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
+		592437AE1D81467A00EA814A /* WXNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureViewController.h; sourceTree = "<group>"; };
+		592437AF1D81467A00EA814A /* WXNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureViewController.m; sourceTree = "<group>"; };
 		5925A7521D76B72A00D0CBBD /* WXDiscoverTableController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WXDiscoverTableController.storyboard; sourceTree = "<group>"; };
 		5925A7541D76C97C00D0CBBD /* WXGroupBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGroupBuyViewController.h; sourceTree = "<group>"; };
 		5925A7551D76C97C00D0CBBD /* WXGroupBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGroupBuyViewController.m; sourceTree = "<group>"; };
@@ -95,6 +105,8 @@
 		597C29BF1D659E20006234ED /* WXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNavigationController.m; sourceTree = "<group>"; };
 		597C29C11D65A62F006234ED /* WXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTabBarButton.h; sourceTree = "<group>"; };
 		597C29C21D65A62F006234ED /* WXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBarButton.m; sourceTree = "<group>"; };
+		5980CFDF1D827EA5004DB73C /* WXNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureCell.h; sourceTree = "<group>"; };
+		5980CFE01D827EA5004DB73C /* WXNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureCell.m; sourceTree = "<group>"; };
 		59F2B01F1D69C08F00408C37 /* WXCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCover.h; sourceTree = "<group>"; };
 		59F2B0201D69C08F00408C37 /* WXCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCover.m; sourceTree = "<group>"; };
 		59F2B0221D69C0E000408C37 /* WXActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXActiveMenu.h; sourceTree = "<group>"; };
@@ -171,6 +183,8 @@
 		592050CE1D619B09009E907D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				592437AA1D81421C00EA814A /* NewFeature(新特性界面) */,
+				592437A11D8141B300EA814A /* Tool(业务类) */,
 				592050CF1D619B09009E907D /* Arena(竞技场) */,
 				592050D51D619B09009E907D /* Discover(发现) */,
 				592050DB1D619B09009E907D /* Hall(购彩大厅) */,
@@ -418,6 +432,68 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		592437A11D8141B300EA814A /* Tool(业务类) */ = {
+			isa = PBXGroup;
+			children = (
+				592437A21D8141B300EA814A /* Guide */,
+				592437A31D8141B300EA814A /* Save */,
+			);
+			path = "Tool(业务类)";
+			sourceTree = "<group>";
+		};
+		592437A21D8141B300EA814A /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				592437A71D8141E000EA814A /* WXGuideTool.h */,
+				592437A81D8141E000EA814A /* WXGuideTool.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		592437A31D8141B300EA814A /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				592437A41D8141CF00EA814A /* WXSaveTool.h */,
+				592437A51D8141CF00EA814A /* WXSaveTool.m */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
+		592437AA1D81421C00EA814A /* NewFeature(新特性界面) */ = {
+			isa = PBXGroup;
+			children = (
+				592437AB1D81421C00EA814A /* Controller */,
+				592437AC1D81421C00EA814A /* Model */,
+				592437AD1D81421C00EA814A /* View */,
+			);
+			path = "NewFeature(新特性界面)";
+			sourceTree = "<group>";
+		};
+		592437AB1D81421C00EA814A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				592437AE1D81467A00EA814A /* WXNewFeatureViewController.h */,
+				592437AF1D81467A00EA814A /* WXNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		592437AC1D81421C00EA814A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		592437AD1D81421C00EA814A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5980CFDF1D827EA5004DB73C /* WXNewFeatureCell.h */,
+				5980CFE01D827EA5004DB73C /* WXNewFeatureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		595240B41D6877B70039ABF4 /* Categoty */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +610,8 @@
 				5925A7591D76C9D700D0CBBD /* WXTitleView.m in Sources */,
 				593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */,
 				59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */,
+				592437A91D8141E000EA814A /* WXGuideTool.m in Sources */,
+				5980CFE11D827EA5004DB73C /* WXNewFeatureCell.m in Sources */,
 				595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */,
 				592051011D619B09009E907D /* main.m in Sources */,
 				5939E8C81D6ED5F50049A638 /* WXDownMenu.m in Sources */,
@@ -551,7 +629,9 @@
 				592050FB1D619B09009E907D /* WXHallTableController.m in Sources */,
 				59F2B0211D69C08F00408C37 /* WXCover.m in Sources */,
 				592050FA1D619B09009E907D /* WXDiscoverTableController.m in Sources */,
+				592437B01D81467A00EA814A /* WXNewFeatureViewController.m in Sources */,
 				5925A7561D76C97C00D0CBBD /* WXGroupBuyViewController.m in Sources */,
+				592437A61D8141CF00EA814A /* WXSaveTool.m in Sources */,
 				5925A75C1D76D62400D0CBBD /* WXLuckyBGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,6 +741,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "20160811-彩票-导航条/Classes/Other/彩票.pch";
 				INFOPLIST_FILE = "20160811-彩票-导航条/Info.plist";
@@ -668,6 +749,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangxu.-0160811-------";
 				PRODUCT_NAME = "20160811-彩票";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -675,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "20160811-彩票-导航条/Classes/Other/彩票.pch";
 				INFOPLIST_FILE = "20160811-彩票-导航条/Info.plist";

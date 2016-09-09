@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WXTabBarController.h"
+#import "WXGuideTool.h"
 // 模拟器和真机的尺寸跟启动图片有关系
 @interface AppDelegate ()
 
@@ -24,9 +25,8 @@
     
     self.window.backgroundColor = [UIColor redColor];
     
-    // 创建窗口跟控制器
-    WXTabBarController *tabBarVC = [[WXTabBarController alloc] init];
-    self.window.rootViewController = tabBarVC;
+    // 选择显示根控制器还是欢迎界面
+    self.window.rootViewController = [WXGuideTool chooseRootViewController];
     
     // 显示窗口
     [self.window makeKeyAndVisible];
