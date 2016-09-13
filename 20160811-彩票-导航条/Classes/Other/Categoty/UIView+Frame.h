@@ -19,5 +19,8 @@
 @property (nonatomic,assign) CGFloat x;
 /** y */
 @property (nonatomic,assign) CGFloat y;
-
+/** centerX */
+@property (nonatomic, assign) CGFloat centerX;
+/** centerY */
+@property (nonatomic, assign) CGFloat centerY;
 @end
