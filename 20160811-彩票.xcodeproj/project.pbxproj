@@ -31,6 +31,7 @@
 		593D13001D87C99A00124506 /* WXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D12FF1D87C99A00124506 /* WXSettingViewController.m */; };
 		593D13061D87CBC800124506 /* WXSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D13051D87CBC800124506 /* WXSaveTool.m */; };
 		593D130A1D87CC0E00124506 /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D13091D87CC0E00124506 /* WXGuideTool.m */; };
+		593D130E1D87D28E00124506 /* WXMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593D130D1D87D28E00124506 /* WXMyLotteryViewController.xib */; };
 		595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B61D6877C80039ABF4 /* UIView+Frame.m */; };
 		595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B91D6877D20039ABF4 /* UIView+Image.m */; };
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
@@ -99,6 +100,7 @@
 		593D13051D87CBC800124506 /* WXSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSaveTool.m; sourceTree = "<group>"; };
 		593D13081D87CC0E00124506 /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
 		593D13091D87CC0E00124506 /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
+		593D130D1D87D28E00124506 /* WXMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXMyLotteryViewController.xib; sourceTree = "<group>"; };
 		595240B51D6877C80039ABF4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		595240B61D6877C80039ABF4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		595240B81D6877D20039ABF4 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 			children = (
 				592050F11D619B09009E907D /* WXMyLotteryViewController.h */,
 				592050F21D619B09009E907D /* WXMyLotteryViewController.m */,
+				593D130D1D87D28E00124506 /* WXMyLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				59F2B0261D69C0F900408C37 /* WXActiveMenu.xib in Resources */,
 				5925A7531D76B72A00D0CBBD /* WXDiscoverTableController.storyboard in Resources */,
 				592050B61D619A0B009E907D /* Assets.xcassets in Resources */,
+				593D130E1D87D28E00124506 /* WXMyLotteryViewController.xib in Resources */,
 				592051031D619BA3009E907D /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

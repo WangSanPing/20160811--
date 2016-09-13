@@ -7,8 +7,10 @@
 //
 
 #import "WXMyLotteryViewController.h"
+#import "WXSettingViewController.h"
 
 @interface WXMyLotteryViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 
 @end
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpNav];
+    
+    UIImage *image = _btnLogin.currentBackgroundImage;
+    
+    // 按钮的图片只能通过代码去拉伸
+    image = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
+    
+    [_btnLogin setBackgroundImage:image forState:UIControlStateNormal];
 }
 
 // 设置左右两边的按钮
@@ -39,7 +48,9 @@
 
 - (void)setting
 {
-    NSLog(@"点击设置");
+    WXSettingViewController *vc = [[WXSettingViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)kefu
