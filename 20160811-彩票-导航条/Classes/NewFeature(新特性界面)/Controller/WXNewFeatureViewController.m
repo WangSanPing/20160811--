@@ -67,7 +67,7 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark - 返回每组有多少个cell
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return WXPages;
+    return WXPages;  
     
 }
 

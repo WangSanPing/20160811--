@@ -19,8 +19,6 @@
 		592051001D619B09009E907D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F71D619B09009E907D /* AppDelegate.m */; };
 		592051011D619B09009E907D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050F81D619B09009E907D /* main.m */; };
 		592051031D619BA3009E907D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592051021D619BA3009E907D /* LaunchScreen.xib */; };
-		592437A61D8141CF00EA814A /* WXSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 592437A51D8141CF00EA814A /* WXSaveTool.m */; };
-		592437A91D8141E000EA814A /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 592437A81D8141E000EA814A /* WXGuideTool.m */; };
 		592437B01D81467A00EA814A /* WXNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592437AF1D81467A00EA814A /* WXNewFeatureViewController.m */; };
 		5925A7531D76B72A00D0CBBD /* WXDiscoverTableController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5925A7521D76B72A00D0CBBD /* WXDiscoverTableController.storyboard */; };
 		5925A7561D76C97C00D0CBBD /* WXGroupBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5925A7551D76C97C00D0CBBD /* WXGroupBuyViewController.m */; };
@@ -30,6 +28,9 @@
 		5939E8C81D6ED5F50049A638 /* WXDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E8C71D6ED5F50049A638 /* WXDownMenu.m */; };
 		5939E8CB1D6ED7280049A638 /* WXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5939E8CA1D6ED7280049A638 /* WXMenuItem.m */; };
 		593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593CAE071D741D4E00712D32 /* WXArenaNavController.m */; };
+		593D13001D87C99A00124506 /* WXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D12FF1D87C99A00124506 /* WXSettingViewController.m */; };
+		593D13061D87CBC800124506 /* WXSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D13051D87CBC800124506 /* WXSaveTool.m */; };
+		593D130A1D87CC0E00124506 /* WXGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D13091D87CC0E00124506 /* WXGuideTool.m */; };
 		595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B61D6877C80039ABF4 /* UIView+Frame.m */; };
 		595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 595240B91D6877D20039ABF4 /* UIView+Image.m */; };
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
@@ -75,10 +76,6 @@
 		592050F71D619B09009E907D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		592050F81D619B09009E907D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		592051021D619BA3009E907D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		592437A41D8141CF00EA814A /* WXSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSaveTool.h; sourceTree = "<group>"; };
-		592437A51D8141CF00EA814A /* WXSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSaveTool.m; sourceTree = "<group>"; };
-		592437A71D8141E000EA814A /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
-		592437A81D8141E000EA814A /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
 		592437AE1D81467A00EA814A /* WXNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureViewController.h; sourceTree = "<group>"; };
 		592437AF1D81467A00EA814A /* WXNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureViewController.m; sourceTree = "<group>"; };
 		5925A7521D76B72A00D0CBBD /* WXDiscoverTableController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WXDiscoverTableController.storyboard; sourceTree = "<group>"; };
@@ -96,6 +93,12 @@
 		5939E8CA1D6ED7280049A638 /* WXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXMenuItem.m; sourceTree = "<group>"; };
 		593CAE061D741D4E00712D32 /* WXArenaNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXArenaNavController.h; sourceTree = "<group>"; };
 		593CAE071D741D4E00712D32 /* WXArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXArenaNavController.m; sourceTree = "<group>"; };
+		593D12FE1D87C99A00124506 /* WXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSettingViewController.h; sourceTree = "<group>"; };
+		593D12FF1D87C99A00124506 /* WXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSettingViewController.m; sourceTree = "<group>"; };
+		593D13041D87CBC800124506 /* WXSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSaveTool.h; sourceTree = "<group>"; };
+		593D13051D87CBC800124506 /* WXSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSaveTool.m; sourceTree = "<group>"; };
+		593D13081D87CC0E00124506 /* WXGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGuideTool.h; sourceTree = "<group>"; };
+		593D13091D87CC0E00124506 /* WXGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGuideTool.m; sourceTree = "<group>"; };
 		595240B51D6877C80039ABF4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		595240B61D6877C80039ABF4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		595240B81D6877D20039ABF4 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
@@ -183,8 +186,9 @@
 		592050CE1D619B09009E907D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				593D13011D87CB7A00124506 /* Tool */,
+				593D12FA1D87A74D00124506 /* Setting(设置) */,
 				592437AA1D81421C00EA814A /* NewFeature(新特性界面) */,
-				592437A11D8141B300EA814A /* Tool(业务类) */,
 				592050CF1D619B09009E907D /* Arena(竞技场) */,
 				592050D51D619B09009E907D /* Discover(发现) */,
 				592050DB1D619B09009E907D /* Hall(购彩大厅) */,
@@ -432,33 +436,6 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		592437A11D8141B300EA814A /* Tool(业务类) */ = {
-			isa = PBXGroup;
-			children = (
-				592437A21D8141B300EA814A /* Guide */,
-				592437A31D8141B300EA814A /* Save */,
-			);
-			path = "Tool(业务类)";
-			sourceTree = "<group>";
-		};
-		592437A21D8141B300EA814A /* Guide */ = {
-			isa = PBXGroup;
-			children = (
-				592437A71D8141E000EA814A /* WXGuideTool.h */,
-				592437A81D8141E000EA814A /* WXGuideTool.m */,
-			);
-			path = Guide;
-			sourceTree = "<group>";
-		};
-		592437A31D8141B300EA814A /* Save */ = {
-			isa = PBXGroup;
-			children = (
-				592437A41D8141CF00EA814A /* WXSaveTool.h */,
-				592437A51D8141CF00EA814A /* WXSaveTool.m */,
-			);
-			path = Save;
-			sourceTree = "<group>";
-		};
 		592437AA1D81421C00EA814A /* NewFeature(新特性界面) */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +469,66 @@
 				5980CFE01D827EA5004DB73C /* WXNewFeatureCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		593D12FA1D87A74D00124506 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				593D12FB1D87A74D00124506 /* Controller */,
+				593D12FC1D87A74D00124506 /* Model */,
+				593D12FD1D87A74D00124506 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		593D12FB1D87A74D00124506 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				593D12FE1D87C99A00124506 /* WXSettingViewController.h */,
+				593D12FF1D87C99A00124506 /* WXSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		593D12FC1D87A74D00124506 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		593D12FD1D87A74D00124506 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		593D13011D87CB7A00124506 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				593D13071D87CC0300124506 /* Guide */,
+				593D13031D87CBAD00124506 /* Save */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		593D13031D87CBAD00124506 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				593D13041D87CBC800124506 /* WXSaveTool.h */,
+				593D13051D87CBC800124506 /* WXSaveTool.m */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
+		593D13071D87CC0300124506 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				593D13081D87CC0E00124506 /* WXGuideTool.h */,
+				593D13091D87CC0E00124506 /* WXGuideTool.m */,
+			);
+			path = Guide;
 			sourceTree = "<group>";
 		};
 		595240B41D6877B70039ABF4 /* Categoty */ = {
@@ -610,7 +647,7 @@
 				5925A7591D76C9D700D0CBBD /* WXTitleView.m in Sources */,
 				593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */,
 				59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */,
-				592437A91D8141E000EA814A /* WXGuideTool.m in Sources */,
+				593D130A1D87CC0E00124506 /* WXGuideTool.m in Sources */,
 				5980CFE11D827EA5004DB73C /* WXNewFeatureCell.m in Sources */,
 				595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */,
 				592051011D619B09009E907D /* main.m in Sources */,
@@ -621,17 +658,18 @@
 				592050FE1D619B09009E907D /* WXTabBar.m in Sources */,
 				592051001D619B09009E907D /* AppDelegate.m in Sources */,
 				592050FC1D619B09009E907D /* WXHistoryTableController.m in Sources */,
+				593D13001D87C99A00124506 /* WXSettingViewController.m in Sources */,
 				5925A75F1D780C6600D0CBBD /* WXLuckyViewController.m in Sources */,
 				592050F91D619B09009E907D /* WXArenaTableController.m in Sources */,
 				592050FF1D619B09009E907D /* WXMyLotteryViewController.m in Sources */,
 				595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */,
 				597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */,
+				593D13061D87CBC800124506 /* WXSaveTool.m in Sources */,
 				592050FB1D619B09009E907D /* WXHallTableController.m in Sources */,
 				59F2B0211D69C08F00408C37 /* WXCover.m in Sources */,
 				592050FA1D619B09009E907D /* WXDiscoverTableController.m in Sources */,
 				592437B01D81467A00EA814A /* WXNewFeatureViewController.m in Sources */,
 				5925A7561D76C97C00D0CBBD /* WXGroupBuyViewController.m in Sources */,
-				592437A61D8141CF00EA814A /* WXSaveTool.m in Sources */,
 				5925A75C1D76D62400D0CBBD /* WXLuckyBGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
