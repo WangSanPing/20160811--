@@ -37,6 +37,7 @@
 		597C29C01D659E20006234ED /* WXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29BF1D659E20006234ED /* WXNavigationController.m */; };
 		597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 597C29C21D65A62F006234ED /* WXTabBarButton.m */; };
 		5980CFE11D827EA5004DB73C /* WXNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5980CFE01D827EA5004DB73C /* WXNewFeatureCell.m */; };
+		598764D51D8E97F8000D88ED /* WXGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 598764D41D8E97F8000D88ED /* WXGlobal.m */; };
 		59F2B0211D69C08F00408C37 /* WXCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2B0201D69C08F00408C37 /* WXCover.m */; };
 		59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2B0231D69C0E000408C37 /* WXActiveMenu.m */; };
 		59F2B0261D69C0F900408C37 /* WXActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F2B0251D69C0F900408C37 /* WXActiveMenu.xib */; };
@@ -112,6 +113,8 @@
 		597C29C21D65A62F006234ED /* WXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTabBarButton.m; sourceTree = "<group>"; };
 		5980CFDF1D827EA5004DB73C /* WXNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNewFeatureCell.h; sourceTree = "<group>"; };
 		5980CFE01D827EA5004DB73C /* WXNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNewFeatureCell.m; sourceTree = "<group>"; };
+		598764D31D8E97F8000D88ED /* WXGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXGlobal.h; sourceTree = "<group>"; };
+		598764D41D8E97F8000D88ED /* WXGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXGlobal.m; sourceTree = "<group>"; };
 		59F2B01F1D69C08F00408C37 /* WXCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCover.h; sourceTree = "<group>"; };
 		59F2B0201D69C08F00408C37 /* WXCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCover.m; sourceTree = "<group>"; };
 		59F2B0221D69C0E000408C37 /* WXActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXActiveMenu.h; sourceTree = "<group>"; };
@@ -510,6 +513,7 @@
 		593D13011D87CB7A00124506 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				598764D21D8E97E5000D88ED /* Global */,
 				593D13071D87CC0300124506 /* Guide */,
 				593D13031D87CBAD00124506 /* Save */,
 			);
@@ -543,6 +547,15 @@
 				595240B91D6877D20039ABF4 /* UIView+Image.m */,
 			);
 			path = Categoty;
+			sourceTree = "<group>";
+		};
+		598764D21D8E97E5000D88ED /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				598764D31D8E97F8000D88ED /* WXGlobal.h */,
+				598764D41D8E97F8000D88ED /* WXGlobal.m */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +608,7 @@
 				TargetAttributes = {
 					592050A51D619A0A009E907D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					592050BE1D619A0B009E907D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -649,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5925A7591D76C9D700D0CBBD /* WXTitleView.m in Sources */,
+				598764D51D8E97F8000D88ED /* WXGlobal.m in Sources */,
 				593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */,
 				59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */,
 				593D130A1D87CC0E00124506 /* WXGuideTool.m in Sources */,
@@ -792,6 +807,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangxu.-0160811-------";
 				PRODUCT_NAME = "20160811-彩票";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -807,6 +823,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangxu.-0160811-------";
 				PRODUCT_NAME = "20160811-彩票";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
