@@ -8,88 +8,157 @@
 
 #import "WXSettingViewController.h"
 
+#import "WXSettingItem.h"
+#import "WXSettingGroup.h"
+
 @interface WXSettingViewController ()
+
+/** 记录当前tableView的所有数组 */
+@property (nonatomic, strong) NSMutableArray *groups;
 
 @end
 
 @implementation WXSettingViewController
 
+- (NSMutableArray *)groups{
+    if(_groups == nil){
+        _groups = [NSMutableArray array];
+    }
+    
+    return _groups;
+}
+
+- (instancetype)init{
+    return [super initWithStyle:UITableViewStyleGrouped];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setUpGroup0];
+    
+    [self setUpGroup1];
+    
+    [self setUpGroup2];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - void Of mine
+
+
+/**
+ 第1组
+ */
+- (void)setUpGroup0{
+    WXSettingItem *item = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    WXSettingItem *item1 = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码111"];
+    WXSettingItem *item2 = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码222"];
+    
+    WXSettingGroup *group = [WXSettingGroup groupWithItems:@[item,item1,item2]];
+    
+    [self.groups addObject:group];
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+/**
+ 第2组
+ */
+- (void)setUpGroup1{
+    WXSettingItem *item = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    WXSettingItem *item1 = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码111"];
+    WXSettingItem *item2 = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码222"];
+    
+    WXSettingGroup *group = [WXSettingGroup groupWithItems:@[item,item1,item2]];
+    
+    [self.groups addObject:group];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+/**
+ 第3组
+ */
+- (void)setUpGroup2{
+    WXSettingItem *item = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码"];
+    WXSettingItem *item1 = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码111"];
+    WXSettingItem *item2 = [WXSettingItem itemWithImage:[UIImage imageNamed:@"RedeemCode"] title:@"使用兑换码222"];
+    
+    WXSettingGroup *group = [WXSettingGroup groupWithItems:@[item,item1,item2]];
+    
+    [self.groups addObject:group];
 }
 
-/*
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
- UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
- 
- // Configure the cell...
- 
- return cell;
- }
- */
+#pragma mark - delegate
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
+/**
+ 每组返回多少行
  */
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    WXSettingGroup *group = _groups[section];
+    
+    return group.items.count;
+}
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
+/**
+ 返回多少组
  */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return _groups.count;
+}
 
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
+/**
+ 返回什么cell的样式
  */
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *ID = @"cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+    }
+    
+    WXSettingGroup *group = self.groups[indexPath.section];
+    
+    WXSettingItem *item = group.items[indexPath.row];
+    
+    cell.textLabel.text = item.title;
+    cell.imageView.image = item.image;
+    
+    return cell;
+}
 
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    WXSettingGroup *group = _groups[section];
+    
+    return group.headTitle;
+}
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    
+    WXSettingGroup *group = _groups[section];
+    
+    return group.footTitle;
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
