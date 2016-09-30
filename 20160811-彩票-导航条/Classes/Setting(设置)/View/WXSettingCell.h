@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WXSettingCell : NSObject
+@class WXSettingItem;
+
+@interface WXSettingCell : UITableViewCell
+
++ (instancetype)cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style;
+
+/** item */
+@property (nonatomic, strong) WXSettingItem *item;
+
+
 
 @end

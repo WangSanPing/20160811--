@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5918128A1D9D120000867920 /* WXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591812891D9D120000867920 /* WXBaseViewController.m */; };
+		5918128E1D9E2F4700867920 /* WXPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5918128D1D9E2F4700867920 /* WXPushViewController.m */; };
+		591812911D9E306200867920 /* WXAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591812901D9E306200867920 /* WXAwardViewController.m */; };
+		591812941D9E308C00867920 /* WXScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591812931D9E308C00867920 /* WXScoreViewController.m */; };
 		592050B61D619A0B009E907D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592050B51D619A0B009E907D /* Assets.xcassets */; };
 		592050C41D619A0B009E907D /* _0160811_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050C31D619A0B009E907D /* _0160811_______Tests.m */; };
 		592050F91D619B09009E907D /* WXArenaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592050D21D619B09009E907D /* WXArenaTableController.m */; };
@@ -65,6 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		591812881D9D120000867920 /* WXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXBaseViewController.h; sourceTree = "<group>"; };
+		591812891D9D120000867920 /* WXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXBaseViewController.m; sourceTree = "<group>"; };
+		5918128C1D9E2F4700867920 /* WXPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPushViewController.h; sourceTree = "<group>"; };
+		5918128D1D9E2F4700867920 /* WXPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPushViewController.m; sourceTree = "<group>"; };
+		5918128F1D9E306200867920 /* WXAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXAwardViewController.h; sourceTree = "<group>"; };
+		591812901D9E306200867920 /* WXAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXAwardViewController.m; sourceTree = "<group>"; };
+		591812921D9E308C00867920 /* WXScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScoreViewController.h; sourceTree = "<group>"; };
+		591812931D9E308C00867920 /* WXScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXScoreViewController.m; sourceTree = "<group>"; };
 		592050A61D619A0A009E907D /* 20160811-彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20160811-彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		592050B51D619A0B009E907D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		592050BA1D619A0B009E907D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +184,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5918128B1D9D166100867920 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				5918128C1D9E2F4700867920 /* WXPushViewController.h */,
+				5918128D1D9E2F4700867920 /* WXPushViewController.m */,
+				5918128F1D9E306200867920 /* WXAwardViewController.h */,
+				591812901D9E306200867920 /* WXAwardViewController.m */,
+				591812921D9E308C00867920 /* WXScoreViewController.h */,
+				591812931D9E308C00867920 /* WXScoreViewController.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
 		5920509D1D619A0A009E907D = {
 			isa = PBXGroup;
 			children = (
@@ -523,8 +548,11 @@
 		593D12FB1D87A74D00124506 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5918128B1D9D166100867920 /* Push */,
 				593D12FE1D87C99A00124506 /* WXSettingViewController.h */,
 				593D12FF1D87C99A00124506 /* WXSettingViewController.m */,
+				591812881D9D120000867920 /* WXBaseViewController.h */,
+				591812891D9D120000867920 /* WXBaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -745,11 +773,13 @@
 				598764D51D8E97F8000D88ED /* WXGlobal.m in Sources */,
 				593CAE081D741D4E00712D32 /* WXArenaNavController.m in Sources */,
 				59F2B0241D69C0E000408C37 /* WXActiveMenu.m in Sources */,
+				5918128A1D9D120000867920 /* WXBaseViewController.m in Sources */,
 				5947AE201D9288A1001E87F5 /* WXSettingCell.m in Sources */,
 				593D130A1D87CC0E00124506 /* WXGuideTool.m in Sources */,
 				5980CFE11D827EA5004DB73C /* WXNewFeatureCell.m in Sources */,
 				595240B71D6877C80039ABF4 /* UIView+Frame.m in Sources */,
 				592051011D619B09009E907D /* main.m in Sources */,
+				591812941D9E308C00867920 /* WXScoreViewController.m in Sources */,
 				5939E8C81D6ED5F50049A638 /* WXDownMenu.m in Sources */,
 				5939E8CB1D6ED7280049A638 /* WXMenuItem.m in Sources */,
 				592050FD1D619B09009E907D /* WXTabBarController.m in Sources */,
@@ -765,12 +795,14 @@
 				5947AE1A1D9287D2001E87F5 /* UIImage+BoxBlur.m in Sources */,
 				592050FF1D619B09009E907D /* WXMyLotteryViewController.m in Sources */,
 				595240BA1D6877D20039ABF4 /* UIView+Image.m in Sources */,
+				591812911D9E306200867920 /* WXAwardViewController.m in Sources */,
 				597C29C31D65A62F006234ED /* WXTabBarButton.m in Sources */,
 				598764EA1D91255A000D88ED /* WXSettingItem.m in Sources */,
 				598764E91D91255A000D88ED /* WXSettingGroup.m in Sources */,
 				593D13061D87CBC800124506 /* WXSaveTool.m in Sources */,
 				598764E81D91255A000D88ED /* WXArrowSettingItem.m in Sources */,
 				592050FB1D619B09009E907D /* WXHallTableController.m in Sources */,
+				5918128E1D9E2F4700867920 /* WXPushViewController.m in Sources */,
 				5947AE191D9287D2001E87F5 /* DRNRealTimeBlurView.m in Sources */,
 				59F2B0211D69C08F00408C37 /* WXCover.m in Sources */,
 				592050FA1D619B09009E907D /* WXDiscoverTableController.m in Sources */,

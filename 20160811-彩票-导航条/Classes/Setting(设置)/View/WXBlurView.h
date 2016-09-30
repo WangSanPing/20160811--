@@ -6,8 +6,8 @@
 //  Copyright © 2016年 wangxu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DRNRealTimeBlurView.h"
 
-@interface WXBlurView : NSObject
+@interface WXBlurView : DRNRealTimeBlurView
 
 @end

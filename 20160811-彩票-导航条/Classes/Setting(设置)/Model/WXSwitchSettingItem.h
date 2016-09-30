@@ -12,6 +12,6 @@
 @interface WXSwitchSettingItem : WXSettingItem
 
 /** Switch */
-@property (nonatomic, assign) BOOL *isOn;
+@property (nonatomic, assign) BOOL isOn;
 
 @end

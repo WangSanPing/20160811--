@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WXBaseViewController.h"
 
-@interface WXSettingViewController : UITableViewController
+@interface WXSettingViewController : WXBaseViewController
 
 @end

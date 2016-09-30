@@ -6,10 +6,11 @@
 //  Copyright © 2016年 wangxu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "WXSettingItem.h"
 
-@interface WXArrowSettingItem : NSObject
+@interface WXArrowSettingItem : WXSettingItem
 
 /** 跳转的控制器 */
-@property (nonatomic, assign) Class *destVc;
+@property (nonatomic, assign) Class destVc;
+
 @end

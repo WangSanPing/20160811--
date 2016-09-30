@@ -21,4 +21,7 @@
 
 + (instancetype)itemWithImage:(UIImage *)image title:(NSString *)title;
 
+/** 用来保存每一行cell的功能 */
+@property (nonatomic, strong)  void(^itemOpertion)(NSIndexPath *);
+
 @end
