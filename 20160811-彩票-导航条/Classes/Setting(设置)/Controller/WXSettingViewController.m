@@ -10,6 +10,9 @@
 #import "WXBlurView.h"
 #import "MBProgressHUD+XMG.h"
 #import "WXPushViewController.h"
+#import "WXHelpViewController.h"
+
+
 @interface WXSettingViewController ()
 
 @end
@@ -24,11 +27,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"常见问题"  style:UIBarButtonItemStyleBordered target:self action:@selector(help)];
+    
+    
     [self setUpGroup0];
     
     [self setUpGroup1];
     
     [self setUpGroup2];
+}
+
+- (void)help{
+    WXHelpViewController *vc = [[WXHelpViewController alloc] init];
+    vc.title = @"帮助";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - void Of mine
